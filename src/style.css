@@ -1,0 +1,39 @@
+html {
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+    text-align: center;
+    background: rgb(30, 95, 216);
+  }
+
+  h1 {font-family: "sans serif";
+    font-size: 30px;
+    text-align: left;
+    color: white;
+    line-height: 70px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  
+
+section {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+    flex: 200px;
+    flex-direction: column;
+    flex: 800px;
+    text-align: left;
+  }
+  .input-100 {
+    align-items: center;
+  }
