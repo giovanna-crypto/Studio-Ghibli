@@ -1,39 +1,41 @@
-html {
-    font-family: sans-serif;
-  }
+
 
   body {
-    margin: 0;
-    text-align: center;
     background: rgb(30, 95, 216);
   }
 
-  h1 {font-family: "sans serif";
-    font-size: 30px;
+  h1 {
+    font-size: 40px;
     text-align: left;
     color: white;
     line-height: 70px;
-    margin: 0;
     display: flex;
     flex-wrap: wrap;
   }
-
-  
+  .input-100 {
+    align-items: center;
+    font-size: 20px;
+    
+  }
 
 section {
     
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 }
 article {
     padding: 10px;
     margin: 10px;
     background: aqua;
-    flex: 200px;
     flex-direction: column;
-    flex: 800px;
-    text-align: left;
-  }
-  .input-100 {
-    align-items: center;
-  }
+    flex: 500px;
+}
+.pelicula1 img {
+  height: 500px;
+  width: 400px;
+
+}
+h2 {
+
+}
