@@ -8,61 +8,46 @@
 <body>
   <div id="root"></div>
   <script src="main.js" type="module"></script>
-  <section id="pantallaUno">
-    <h1 id="encabezado">STUDIOS GHIBLI SITE <br> You Ghibli World!</h1>
-    <div class="imagenlogotipo">
-      <img src="./img/Studio_Ghibli_Logo.png">
+  <section id="pantalla1">
+    <h1 id="encabezado">STUDIOS GHIBLI SITE <br> You Ghibli World!
+    <div class="logo">
+      <img src="./img/pngwing.com.png">
     </div>
+    </h1>
     <div>
-      <input type="text" id="buscador" placeholder="Buscar" class="input-100">
+      <input type="text" id="buscador" placeholder="Find your movie here!" class="input-100">
       <br>
     </div>
     <br>
-    <Menu>Menu
-    </Menu>
-  </section>
-  <section id="peliculas">
-    <article id="cd3d059c-09f4-4ff3-8d63-bc765a5184fa">
-      <h2>El Castillo Ambulante</h2>
-      <div class="pelicula1">
-        <img src="https://static.wikia.nocookie.net/studio-ghibli/images/0/08/Howl%27s_Moving_Castle.jpg" alt="">
-      </div>
-    </article>
-    <article id="dc2e6bd1-8156-4886-adff-b39e6043af0c">
-
-      <h2>El viaje de Chihiro</h2>
-      <div class="pelicula2">
-        <img src="https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Spirited_Away.png" alt="">
-
-      </div>
-    </article>
-    <article id="58611129-2dbc-4a81-a72f-77ddfc1b1b49">
-      <h2>Mi vecino Totoro</h2>
-      <div class="pelicula3">
-        <img src="https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg" alt="">
-      </div>
-    </article>
-    <article id="0440483e-ca0e-4120-8c50-4c8cd9b965d6">
-      <h2>La princesa Mononoke</h2>
-      <div class="pelicula4">
-        <img src="https://static.wikia.nocookie.net/studio-ghibli/images/c/c6/Princess_Mononoke.jpg" alt="">
-      </div>
-    </article>
-    <article id="12cfb892-aac0-4c5b-94af-521852e46d6a">
-      <h2>La tumba de las luciernagas</h2>
-      <div class="pelicula5">
-        <img
-          src="https://static.wikia.nocookie.net/studio-ghibli/images/a/a5/Grave_of_the_Fireflies_Japanese_poster.jpg"
-          alt="">
-      </div>
-    </article>
-    <article id="45db04e4-304a-4933-9823-33f389e8d74d">
-      <h2>La colina de las amapolas</h2>
-      <div class="pelicula6">
-        <img src="https://static.wikia.nocookie.net/studio-ghibli/images/b/bb/From_Up_on_Poppy_Hill.jpg" alt="">
-      </div>
-    </article>
-  </section>
-  <div class="pelicula">
+    <nav class="menu">
+      <ul>
+        <li class="buttons"> Home </li>
+        <li class="buttons">Movies</li>
+        <li class="buttons"> Best Images </li>
+      </ul>
+    </nav>
+  <div id="pantalla">
+    <p class="namePelicula">Best Movies!</p>
+    <div id="Buttons" class="buttons">
+      <select id="selectOrder">
+        <option value="">Order by</option>
+        <option value="asc">A-Z</option>
+        <option value="desc">Z-A</option>
+        <option value="rt_score">Calificación ↑</option>
+        <option value="rt_score">Calificación ↓</option>
+        <option value="release_date">Año de estreno ↑</option>
+        <option value="release_date">Año de estreno ↓</option>
+      </select>
+      <select id="selectType">
+        <option value="people">Personajes</option>
+        <option value="director">Director</option>
+        <option value="gender">Género</option>
+        <option value="specie">Especie</option>
+        <option value="location">Locaciones</option>
+      </select>
+    </div>
+    <div id="p2data" class="">
+    </div>
+  </div>
 </body>
 </html>
