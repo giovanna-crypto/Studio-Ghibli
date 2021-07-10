@@ -1,53 +1,104 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Data Lovers</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div id="root"></div>
-  <script src="main.js" type="module"></script>
-  <section id="pantalla1">
-    <h1 id="encabezado">STUDIOS GHIBLI SITE <br> You Ghibli World!
-    <div class="logo">
-      <img src="./img/pngwing.com.png">
-    </div>
-    </h1>
-    <div>
-      <input type="text" id="buscador" placeholder="Find your movie here!" class="input-100">
-      <br>
-    </div>
-    <br>
-    <nav class="menu">
-      <ul>
-        <li class="buttons"> Home </li>
-        <li class="buttons">Movies</li>
-        <li class="buttons"> Best Images </li>
+  <head>
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="encabezado">STUDIOS GHIBLI SITE <br> You Ghibli World!</h1>
+          <div class="imagenlogotipo">
+            <img src="./img/ghibli2.0.png">
+          </div>
+    <!-- header.main-header{HEADER} -
+    <header class="main-header">
+      <div class="slide-contenedor">
+          <div class="miSlider fade">
+              <img src="./img/El_Castillo_Ambulante.jpg" alt="">
+          </div>
+          <div class="miSlider fade">
+              <img src="./img/El_viaje_de_Chihiro.jpg" alt="">
+          </div>
+          <div class="miSlider fade">
+              <img src="./img/La_princesa_Mononoke.png" alt="">
+          </div>
+          <div class="miSlider fade">
+              <img src="./img/Mi_vecino_Totoro.jpg" alt="">
+          </div>
+
+          <div class="direcciones">
+              <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+              <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+          </div>
+          <!-- <div class="barras">
+              <span class="barra active" onclick="posicionSlide(1)"></span>
+              <span class="barra" onclick="posicionSlide(2)"></span>
+              <span class="barra" onclick="posicionSlide(3)"></span>
+              <span class="barra" onclick="posicionSlide(4)"></span>
+          </div> -->
+      </div>
+    
+
+  </header>
+  <nav class="main-nav">
+      <ul class="nav-container">
+          <!-- li*5.nav-container__item>a[href="#"].nav-container__link{Item $} -->
+          <li class="nav-container__item"><a href="#" class="nav-container__link">Pelicula</a></li>
+          <li class="nav-container__item"><a href="#" class="nav-container__link">Galerias Imagen</a></li>
+          <li id="btnordenar" class="nav-container__item"><a href="#" class="nav-container__link">Ordenar</a></li>
+          <li class="nav-container__item"><a href="#" class="nav-container__link">Personajes</a></li>
+          <li class="nav-container__item"><a href="#" class="nav-container__link">Director</a></li>
       </ul>
-    </nav>
-  <div id="pantalla">
-    <p class="namePelicula">Best Movies!</p>
-    <div id="Buttons" class="buttons">
-      <select id="selectOrder">
-        <option value="">Order by</option>
-        <option value="asc">A-Z</option>
-        <option value="desc">Z-A</option>
-        <option value="rt_score">Calificación ↑</option>
-        <option value="rt_score">Calificación ↓</option>
-        <option value="release_date">Año de estreno ↑</option>
-        <option value="release_date">Año de estreno ↓</option>
-      </select>
-      <select id="selectType">
-        <option value="people">Personajes</option>
-        <option value="director">Director</option>
-        <option value="gender">Género</option>
-        <option value="specie">Especie</option>
-        <option value="location">Locaciones</option>
-      </select>
-    </div>
-    <div id="p2data" class="">
-    </div>
-  </div>
-</body>
+  </nav>
+  <!-- main -->
+  <main class="main-container">
+
+    <p id="demo"></p>
+
+      <section id="pantallaUno">
+          
+          <div>
+            <input type="text" id="buscador" placeholder="Buscar" class="input-100">
+            <br>
+          </div>
+          <br>
+          <!-- <Menu>Menu
+          </Menu> -->
+        </section>
+      <section id="peliculas">
+
+<!--           <article id="cd3d059c-09f4-4ff3-8d63-bc765a5184fa">
+            <h2>El Castillo Ambulante</h2>
+            <div class="pelicula1">
+              <img src="https://static.wikia.nocookie.net/studio-ghibli/images/0/08/Howl%27s_Moving_Castle.jpg" alt="">
+            </div>
+          </article>
+          <article id="dc2e6bd1-8156-4886-adff-b39e6043af0c">
+      
+            <h2>El viaje de Chihiro</h2>
+            <div class="pelicula2">
+              <img src="https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Spirited_Away.png" alt="">
+      
+            </div>
+          </article>
+         
+          
+          <article id="45db04e4-304a-4933-9823-33f389e8d74d">
+            <h2>La colina de las amapolas</h2>
+            <div class="pelicula6">
+              <img src="https://static.wikia.nocookie.net/studio-ghibli/images/b/bb/From_Up_on_Poppy_Hill.jpg" alt="">
+            </div>
+          </article> -->
+        </section>
+        <section id="cajadatos"></section>
+      <!-- <section class="main-container__section">SECTION</section>
+      <aside class="main-container__aside">ASIDE</aside> -->
+  </main>
+  <!-- fin main -->
+ 
+    <footer class="main-footer">FOOTER</footer>
+    <div id="root"></div>
+    <script src="main.js" type="module"></script>
+  </body>
 </html>
