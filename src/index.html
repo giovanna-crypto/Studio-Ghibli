@@ -1,41 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/grid01.css">
+    
     <link rel="stylesheet" href="style.css">
+    <title>Studio_Ghibli</title>
   </head>
   <body>
     <!-- header.main-header{HEADER} -->
     <header class="main-header">
       <div class="slide-contenedor">
+        
+       
           <div class="miSlider fade">
+            
               <img src="./img/El_Castillo_Ambulante.jpg" alt="">
+              <div class="texto4"><h1>EL CASTILLO AMBULANTE</h1></div>
+              <div class= "logo2">
+                <img src="https://www.studioghibli.com.au/wp-content/uploads/2017/07/ghibli_logo_white-1.png"  alt="" >
+              </div>
           </div>
           <div class="miSlider fade">
               <img src="./img/El_viaje_de_Chihiro.jpg" alt="">
+              <div class="texto4"><h1>EL VIAJE DE CHIHIRO</h1></div>
+              <div class= "logo2">
+                <img src="https://www.studioghibli.com.au/wp-content/uploads/2017/07/ghibli_logo_white-1.png"  alt="" >
+              </div>
           </div>
           <div class="miSlider fade">
               <img src="./img/La_princesa_Mononoke.png" alt="">
+              <div class="texto4"><h1>LA PRINCESA MONONOKE</h1></div>
+              <div class= "logo2">
+                <img src="https://www.studioghibli.com.au/wp-content/uploads/2017/07/ghibli_logo_white-1.png"  alt="" >
+              </div>
           </div>
           <div class="miSlider fade">
               <img src="./img/Mi_vecino_Totoro.jpg" alt="">
+              <div class="texto4"><h1>MI VECINO TOTORO</h1></div>
+              <div class= "logo2">
+                <img src="./img/Studio_Ghibli_Logo.png"  alt="" >
+              </div>
           </div>
 
           <div class="direcciones">
               <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
               <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
           </div>
-          <!-- <div class="barras">
+          <div class="barras">
               <span class="barra active" onclick="posicionSlide(1)"></span>
               <span class="barra" onclick="posicionSlide(2)"></span>
               <span class="barra" onclick="posicionSlide(3)"></span>
               <span class="barra" onclick="posicionSlide(4)"></span>
-          </div> -->
-      </div>
-    
+          </div>
 
+       
+      
+      </div>
   </header>
   <nav class="main-nav">
       <ul class="nav-container">
@@ -50,7 +74,7 @@
   <!-- main -->
   <main class="main-container">
 
-    <p id="demo"></p>
+    <!-- <p id="demo"></p> -->
 
       <section id="pantallaUno">
           <!-- <h1 id="encabezado">STUDIOS GHIBLI SITE <br> You Ghibli World!</h1>
@@ -59,26 +83,53 @@
           </div> -->
           <div>
             <input type="text" id="buscador" placeholder="Buscar" class="input-100">
-            <br>
+           
           </div>
-          <br>
+         
           <!-- <Menu>Menu
           </Menu> -->
-        </section>
-      <section id="peliculas">
+      </section>
+      <section id="peliculas" class="grid-container">
 
-<!--           <article id="cd3d059c-09f4-4ff3-8d63-bc765a5184fa">
+<!--      <article id="cd3d059c-09f4-4ff3-8d63-bc765a5184fa">
             <h2>El Castillo Ambulante</h2>
             <div class="pelicula1">
               <img src="https://static.wikia.nocookie.net/studio-ghibli/images/0/08/Howl%27s_Moving_Castle.jpg" alt="">
             </div>
           </article>
+
+
+   <div class="grid-container">
+      <div
+        class="grid-item tall"
+        style="background-image: url('https://picsum.photos/id/65/900/900.jpg')">
+        
+        <div class="texto1"><h2>LA PRINCESA MONONOKE</h2></div>
+    </div>
+          
+mostrarpeliculas(data.films);
+function mostrarpeliculas(misdatos){
+  let cajadatos=document.getElementById("peliculas");
+  cajadatos.innerHTML="";
+  for (let j=0; j<misdatos.length; j++){
+   cajadatos.innerHTML+=`        <article class="miarticulo">
+            
+   <h2>${misdatos[j].title}</h2>
+            <div id='${misdatos[j].id}' class="pelicula">
+            
+            <a class="empezar" href="detalle.html"><img  src="${misdatos[j].poster}" alt=""></a>
+          </div>
+        </article>`
+  
+  }
+ 
+}
+
+
           <article id="dc2e6bd1-8156-4886-adff-b39e6043af0c">
-      
             <h2>El viaje de Chihiro</h2>
             <div class="pelicula2">
               <img src="https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Spirited_Away.png" alt="">
-      
             </div>
           </article>
          
@@ -89,7 +140,9 @@
               <img src="https://static.wikia.nocookie.net/studio-ghibli/images/b/bb/From_Up_on_Poppy_Hill.jpg" alt="">
             </div>
           </article> -->
+
         </section>
+
         <section id="cajadatos"></section>
       <!-- <section class="main-container__section">SECTION</section>
       <aside class="main-container__aside">ASIDE</aside> -->
@@ -99,5 +152,6 @@
     <footer class="main-footer">FOOTER</footer>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
+    <script src="main1.js" type="module"></script>
   </body>
 </html>

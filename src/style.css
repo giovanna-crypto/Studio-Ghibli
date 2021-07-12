@@ -1,8 +1,9 @@
 
-
+/* 
   body {
     background: rgb(30, 95, 216);
-  }
+   
+  } */
 
   h1 {
     font-size: 40px;
@@ -11,26 +12,28 @@
     line-height: 70px;
     display: flex;
     flex-wrap: wrap;
+  
   }
   .input-100 {
     
     align-items: center;
-    font-size: 20px;
+    font-size: 30px;;
     
   }
 
 section {
     
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: flex-end;
 }
 article {
-    padding: 10px;
-    margin: 10px;
-    background: aqua;
-    flex-direction: column;
-    flex: 500px;
+  padding: 10px;
+  margin: 10px;
+  background: aqua;
+  flex-direction: column;
+  flex: 300px;
 }
 .pelicula1 img {
   height: 500px;
@@ -38,8 +41,26 @@ article {
 
 }
 
-.pelicula img {
-  height: 500px;
-  width: 400px;
+.texto4{
+  position: absolute;
+  bottom:10px;
+  left:3%;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-size: 22px;
+  color: rgb(234, 234, 243);
+  font-weight: bold;
+  -webkit-text-stroke: 1px #02687F;
+  font-family: 'Kavoon', cursive;
+}
+.logo2{
+  position: absolute;
+  bottom: 55%;
+  right: 2%;
 
+}
+.logo2 img{
+  width:180px; 
+  height:78px;
+ 
+ 
 }
