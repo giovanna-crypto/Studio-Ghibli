@@ -1,74 +1,76 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1 id="encabezado">STUDIOS GHIBLI SITE <br> You Ghibli World!</h1>
-          <div class="imagenlogotipo">
-            <img src="./img/ghibli2.0.png">
-          </div>
-    <!-- header.main-header{HEADER} -
-    <header class="main-header">
-      <div class="slide-contenedor">
-          <div class="miSlider fade">
-              <img src="./img/El_Castillo_Ambulante.jpg" alt="">
-          </div>
-          <div class="miSlider fade">
-              <img src="./img/El_viaje_de_Chihiro.jpg" alt="">
-          </div>
-          <div class="miSlider fade">
-              <img src="./img/La_princesa_Mononoke.png" alt="">
-          </div>
-          <div class="miSlider fade">
-              <img src="./img/Mi_vecino_Totoro.jpg" alt="">
-          </div>
 
-          <div class="direcciones">
-              <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
-              <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
-          </div>
-          <!-- <div class="barras">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- header.main-header{HEADER} -->
+  <header class="main-header">
+    <div class="slide-contenedor">
+      <div class="miSlider fade">
+        <img src="./img/El_Castillo_Ambulante.jpg" alt="">
+      </div>
+      <div class="miSlider fade">
+        <img src="./img/El_viaje_de_Chihiro.jpg" alt="">
+      </div>
+      <div class="miSlider fade">
+        <img src="./img/La_princesa_Mononoke.png" alt="">
+      </div>
+      <div class="miSlider fade">
+        <img src="./img/Mi_vecino_Totoro.jpg" alt="">
+      </div>
+
+      <div class="direcciones">
+        <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+        <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+      </div>
+      <!-- <div class="barras">
               <span class="barra active" onclick="posicionSlide(1)"></span>
               <span class="barra" onclick="posicionSlide(2)"></span>
               <span class="barra" onclick="posicionSlide(3)"></span>
               <span class="barra" onclick="posicionSlide(4)"></span>
           </div> -->
-      </div>
-    
+    </div>
+
 
   </header>
   <nav class="main-nav">
-      <ul class="nav-container">
-          <!-- li*5.nav-container__item>a[href="#"].nav-container__link{Item $} -->
-          <li class="nav-container__item"><a href="#" class="nav-container__link">Pelicula</a></li>
-          <li class="nav-container__item"><a href="#" class="nav-container__link">Galerias Imagen</a></li>
-          <li id="btnordenar" class="nav-container__item"><a href="#" class="nav-container__link">Ordenar</a></li>
-          <li class="nav-container__item"><a href="#" class="nav-container__link">Personajes</a></li>
-          <li class="nav-container__item"><a href="#" class="nav-container__link">Director</a></li>
-      </ul>
+    <ul class="nav-container">
+      <!-- li*5.nav-container__item>a[href="#"].nav-container__link{Item $} -->
+      <li class="nav-container__item"><a href="#" class="nav-container__link">Pelicula</a></li>
+      <li class="nav-container__item"><a href="#" class="nav-container__link">Galerias Imagen</a></li>
+      <li id="btnordenar" class="nav-container__item"><a href="#" class="nav-container__link">Ordenar</a></li>
+      <li class="nav-container__item"><a href="#" class="nav-container__link">Personajes</a></li>
+      <li class="nav-container__item"><a href="#" class="nav-container__link">Director</a></li>
+    </ul>
   </nav>
   <!-- main -->
   <main class="main-container">
 
     <p id="demo"></p>
 
-      <section id="pantallaUno">
-          
-          <div>
-            <input type="text" id="buscador" placeholder="Buscar" class="input-100">
-            <br>
-          </div>
-          <br>
-          <!-- <Menu>Menu
+    <section id="pantallaUno">
+      <!-- <h1 id="encabezado">STUDIOS GHIBLI SITE <br> You Ghibli World!</h1>
+          <div class="imagenlogotipo">
+            <img src="./img/Studio_Ghibli_Logo.png">
+          </div> -->
+      <div>
+        <input type="text" id="buscador" placeholder="Buscar" class="input-100">
+        <br>
+      </div>
+      <br>
+      <!-- <Menu>Menu
           </Menu> -->
-        </section>
-      <section id="peliculas">
+    </section>
+    <section id="peliculas">
 
-<!--           <article id="cd3d059c-09f4-4ff3-8d63-bc765a5184fa">
+      <!--           <article id="cd3d059c-09f4-4ff3-8d63-bc765a5184fa">
             <h2>El Castillo Ambulante</h2>
             <div class="pelicula1">
               <img src="https://static.wikia.nocookie.net/studio-ghibli/images/0/08/Howl%27s_Moving_Castle.jpg" alt="">
@@ -90,15 +92,16 @@
               <img src="https://static.wikia.nocookie.net/studio-ghibli/images/b/bb/From_Up_on_Poppy_Hill.jpg" alt="">
             </div>
           </article> -->
-        </section>
-        <section id="cajadatos"></section>
-      <!-- <section class="main-container__section">SECTION</section>
+    </section>
+    <section id="cajadatos"></section>
+    <!-- <section class="main-container__section">SECTION</section>
       <aside class="main-container__aside">ASIDE</aside> -->
   </main>
   <!-- fin main -->
- 
-    <footer class="main-footer">FOOTER</footer>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+  <footer class="main-footer">FOOTER</footer>
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>

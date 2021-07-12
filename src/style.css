@@ -1,17 +1,75 @@
-body {
+body{
   background: rgb(30, 95, 216);
+  margin:0;
+  padding:0;
+}
+.main-header{
+  display: grid;
+  background-color: rgb(88, 136, 224);
+  grid-template-columns: 100%;
+}
+.main-nav{
+  display: grid;
+  background-color: rgb(107, 204, 241);
+  grid-template-columns: 100%;
+}
+main{
+  display: flex;
+  align-content: stretch;
+}
+.main-container{
+  display: grid;
+  background-color: rgb(231, 231, 231);
+  grid-template-columns: 100%;
+  
+}
+#cajadatos{
+  display: grid;
+  background-color: rgb(41, 59, 136);
+  grid-template-columns: 100%;
+}
+.main-footer{
+  display: grid;
+  background-color: rgb(11, 18, 49);
+  grid-template-columns: 100%;
+}
+section {
+  
+  display: flex grid;
+  flex-wrap: wrap;
+  text-align: center;
+  grid-template-columns: 33% 33% 33%;
+  gap: 1px;
+  justify-content: flex-end;
+
+  
 }
 
+section#peliculas{
+  display: grid;
+  align-content: stretch;
+}
+img {
+ max-width: 100%;
+ height: auto;
+}
+article {
+  display: flex;
+  background: aqua;
+  flex: 300px;
+}
+article.miarticulo{
+  display: flex;
+  flex-direction: column;
+}
 h1 {
-  font-size: 30px;
+  font-size: 40px;
   text-align: left;
   color: white;
   line-height: 70px;
   display: flex;
   flex-wrap: wrap;
 }
-
-
 
 .input-100 {
   
@@ -20,13 +78,7 @@ h1 {
   
 }
 
-section {
-  
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: flex-end;
-}
+
 
 article {
   padding: 10px;
@@ -45,32 +97,22 @@ width: 400px;
 height: 500px;
 width: 400px;
 
-}
-
-/*#Buttons {
-  align-items: center;
-  font-size: 2px;
-}
-select{
-  align-items: center;
-  font-size: 30px;
-  
-}*/
-
-
-ul{
-list-style: none;
-display: flex;
-justify-content: center;
-width: 100%;
-
-}
-li {
+/*li {
   padding: 30px;
   margin: 10px;
   background: rgb(155, 240, 240);
   align-content: space-between;
   font-family:'Lucida Sans Regular', sans-serif;
   font-size: 30px;
-  
 }
+ul {
+  list-style: none;
+  display: flex; 
+  justify-content: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+ .main-container {
+
+ }  
