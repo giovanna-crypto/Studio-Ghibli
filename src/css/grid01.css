@@ -1,73 +1,74 @@
 .miarticulo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    background-color: #03afff;
-    border-radius: 4px;
-    transition: transform 0.3s ease-in-out;
-  
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .miarticulo:hover {
-    filter: opacity(0.9);
-    transform: scale(1.04);
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: minmax(200px, auto);
-    gap: 20px;
-    padding: 20px;
-    grid-auto-flow: dense;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.miarticulo:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+
+
+
+@media (min-width: 300px) {
  
- 
-
-  @media (min-width: 300px) {
-   
-    .tall {
-      grid-row: span 2;
-    }
+  .tall {
+    grid-row: span 2;
   }
+}
 
-  @media (min-width: 600px) {
-    /* .wide {
-      grid-column: span 2;  grid-row
-    } */
-  
-    .tall {
-      grid-row: span 2;
-    }
-  }
-
-  .texto1{
-    position: absolute;
-    top:40px;
-    text-align: center;
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
-    font-size: 7px;
-    color: rgb(234, 234, 243);
-    font-weight: bold;
-    -webkit-text-stroke: 1px #02687F;
-    font-family: 'Kavoon', cursive;
-  }
-
-  /* @media screen and (min-width:1000px){
-  
-
-    .tall {
-      grid-row: span 2;
-    }
+@media (min-width: 600px) {
+  /* .wide {
+    grid-column: span 2;  grid-row
   } */
 
-  @media screen and (min-width:1324px){
-    .tall {
-        grid-row: span 2;
-      }
+  .tall {
+    grid-row: span 2;
+  }
+}
+
+.texto1{
+  position: absolute;
+  top:40px;
+  text-align: center;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-size: 7px;
+  color: rgb(234, 234, 243);
+  font-weight: bold;
+  -webkit-text-stroke: 1px #02687F;
+  font-family: 'Kavoon', cursive;
+}
+
+/* @media screen and (min-width:1000px){
+
+
+  .tall {
+    grid-row: span 2;
+  }
+} */
+
+@media screen and (min-width:1324px){
+  .tall {
+      grid-row: span 2;
     }
+  }

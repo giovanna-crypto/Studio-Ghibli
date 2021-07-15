@@ -34,13 +34,23 @@ body{
 }
 .main-nav{
     background-color: var(--color-nav);
+    font-size: 40px;
 }
+div{
+    display: flex;
+    justify-content:flex-end;
+}
+
 @media screen and (min-width:768px){
     .nav-container{
         display: flex;
     }
     .nav-container__item{
         flex-grow:1;
+    }
+    section.input#buscador{
+        justify-content: flex-end;
+        
     }
 }
 .nav-container__item{
@@ -56,20 +66,49 @@ body{
     color: var(--color-white);
     display: block;
     width:100%;
+    justify-content: flex-end;
 }
 .main-container{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
-@media screen and (min-width:1024px){
+@media screen and (min-width:1025px){
+    section#peliculas.grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;}
+    }
+
+@media screen and (max-width:1024px){
+    section {
+        align-content: center;  
+    }
+    div{
+        display: flex;
+        justify-content:flex-end;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
     .main-container{
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
+    .nav-container{
+        color: var(--color-white);
+        display: block;
+        width:100%;
+        justify-content: flex-end;
+        align-content: flex-start;
+        font-size:40px;
+    }
+
+
     .main-container__section{
         /* width: 60%; */
-        flex-basis: 60%;
+        flex-basis: 90%;
     }
     .main-container__aside{
         flex-basis:40%;
