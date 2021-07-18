@@ -8,12 +8,17 @@
     --color-white:#fff;
     --color-black:#000;
 }
+select#bottom.nav-container__link {
+    display:flex;
+text-align: center;
+
+}
 #bottom.nav-container__item {
 background-color: #049DBF;
 font-size:35px;
 color: var(--color-white);
 font-family: cursive;
-
+width: 25%;
 }
 ul {
     display:flex;
@@ -40,12 +45,14 @@ body{
 .main-header{
     background-color:var(--color-header);
     color: var(--color-white);
-    line-height: 12;
+    line-height: 10;
     text-align: center;
 }
 .main-nav{
+    
     background-color: var(--color-nav);
     font-size: 40px;
+    
 }
 div{
     display: flex;
