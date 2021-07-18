@@ -132,7 +132,7 @@ function mostrarpeliculas(misdatos){
   cajadatos.innerHTML="";
   for (let j=0; j<misdatos.length; j++){
    cajadatos.innerHTML+=`        <article class="miarticulo">
-            
+
    <h2>${misdatos[j].title}</h2>
             <div id='${misdatos[j].id}' class="pelicula">
             
@@ -175,4 +175,11 @@ function mipelicula(miid){
   console.log("clic en pelicula")
 
 }
-
+   //lista de personajes (people) de la pelicula "Castle in the Sky"
+/*function verPersonajes() {
+let personajes1=data.films[0].people[i].name; 
+for (let i=0; i<13; i++){
+document.getElementById("Personajes").innerHTML=personajes1[0].style.display="block";
+}
+console.log(data.films[0].people[i].name);*/
+console.log(data.films[6].title);

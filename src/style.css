@@ -1,85 +1,33 @@
-body{
-  background: rgb(30, 95, 216);
-  margin:0;
-  padding:0;
-}
-.main-header{
-  display: grid;
-  background-color: rgb(88, 136, 224);
-  grid-template-columns: 100%;
-}
-.main-nav{
-  display: grid;
-  background-color: rgb(107, 204, 241);
-  grid-template-columns: 100%;
-}
-main{
-  display: flex;
-  align-content: stretch;
-}
-.main-container{
-  display: grid;
-  background-color: rgb(231, 231, 231);
-  grid-template-columns: 100%;
+
+/* 
+  body {
+    background: rgb(30, 95, 216);
+   
+  } */
+
+  h1 {
+    font-size: 40px;
+    text-align: left;
+    color: white;
+    line-height: 70px;
+    display: flex;
+    flex-wrap: wrap;
   
-}
-#cajadatos{
-  display: grid;
-  background-color: rgb(41, 59, 136);
-  grid-template-columns: 100%;
-}
-.main-footer{
-  display: grid;
-  background-color: rgb(11, 18, 49);
-  grid-template-columns: 100%;
-}
+  }
+  .input-100 {
+    
+    text-align: center;
+    font-size: 40px;;
+    
+  }
+
 section {
-  
-  display: flex grid;
+    
+  display: flex;
   flex-wrap: wrap;
   text-align: center;
-  grid-template-columns: 33% 33% 33%;
-  gap: 1px;
-  justify-content: flex-end;
-
-  
+  justify-content: center;
 }
-
-section#peliculas{
-  display: grid;
-  align-content: stretch;
-}
-img {
- max-width: 100%;
- height: auto;
-}
-article {
-  display: flex;
-  background: aqua;
-  flex: 300px;
-}
-article.miarticulo{
-  display: flex;
-  flex-direction: column;
-}
-h1 {
-  font-size: 40px;
-  text-align: left;
-  color: white;
-  line-height: 70px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.input-100 {
-  
-  align-items: center;
-  font-size: 30px;
-  
-}
-
-
-
 article {
   padding: 10px;
   margin: 10px;
@@ -88,31 +36,31 @@ article {
   flex: 300px;
 }
 .pelicula1 img {
-height: 500px;
-width: 400px;
+  height: 500px;
+  width: 400px;
 
 }
 
-.pelicula img {
-height: 500px;
-width: 400px;
-
-/*li {
-  padding: 30px;
-  margin: 10px;
-  background: rgb(155, 240, 240);
-  align-content: space-between;
-  font-family:'Lucida Sans Regular', sans-serif;
-  font-size: 30px;
+.texto4{
+  position: absolute;
+  bottom:10px;
+  left:3%;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-size: 22px;
+  color: rgb(234, 234, 243);
+  font-weight: bold;
+  -webkit-text-stroke: 1px #02687F;
+  font-family: 'Kavoon', cursive;
 }
-ul {
-  list-style: none;
-  display: flex; 
-  justify-content: center;
-  width: 100%;
+.logo2{
+  position: absolute;
+  bottom: 55%;
+  right: 2%;
+
 }
-
-@media screen and (min-width: 768px) and (max-width: 979px) {
- .main-container {
-
- }  
+.logo2 img{
+  width:180px; 
+  height:78px;
+ 
+ 
+}
