@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/grid01.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Studio_Ghibli</title>
+  </head>
+  <body>
+    <!-- header.main-header{HEADER} -->
+    <header class="main-header">
+      <div class="slide-contenedor">
+        
+       
+          <div class="miSlider fade">
+            
+              <img src="./img/El_Castillo_Ambulante.jpg" alt="">
+              <div class="texto4"><h1>EL CASTILLO AMBULANTE</h1></div>
+              <div class= "logo2">
+                <img src="https://www.studioghibli.com.au/wp-content/uploads/2017/07/ghibli_logo_white-1.png"  alt="" >
+              </div>
+          </div>
+          <div class="miSlider fade">
+              <img src="./img/El_viaje_de_Chihiro.jpg" alt="">
+              <div class="texto4"><h1>EL VIAJE DE CHIHIRO</h1></div>
+              <div class= "logo2">
+                <img src="https://www.studioghibli.com.au/wp-content/uploads/2017/07/ghibli_logo_white-1.png"  alt="" >
+              </div>
+          </div>
+          <div class="miSlider fade">
+              <img src="./img/La_princesa_Mononoke.png" alt="">
+              <div class="texto4"><h1>LA PRINCESA MONONOKE</h1></div>
+              <div class= "logo2">
+                <img src="https://www.studioghibli.com.au/wp-content/uploads/2017/07/ghibli_logo_white-1.png"  alt="" >
+              </div>
+          </div>
+          <div class="miSlider fade">
+              <img src="./img/Mi_vecino_Totoro.jpg" alt="">
+              <div class="texto4"><h1>MI VECINO TOTORO</h1></div>
+              <div class= "logo2">
+                <img src="./img/Studio_Ghibli_Logo.png"  alt="" >
+              </div>
+          </div>
+
+          <div class="direcciones">
+              <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+              <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+          </div>
+          <div class="barras">
+              <span class="barra active" onclick="posicionSlide(1)"></span>
+              <span class="barra" onclick="posicionSlide(2)"></span>
+              <span class="barra" onclick="posicionSlide(3)"></span>
+              <span class="barra" onclick="posicionSlide(4)"></span>
+          </div>
+
+       
+      
+      </div>
+  </header>
+  <nav class="main-nav">
+      <ul class="nav-container">
+          <!-- li*5.nav-container__item>a[href="#"].nav-container__link{Item $} -->
+          <li class="nav-container__item"><a href="#" class="nav-container__link">Películas</a></li>
+          <li id="btnordenar" class="nav-container__item"><a href="#" class="nav-container__link">Ordenar</a></li>
+          <li class="nav-container__item"><a href="#" class="nav-container__link"> Director</a></li>
+          <select id="bottom" class="nav-container__item selectp">
+              <option value="" disabled selected>Personajes por Movies</option>
+              <option value="Castle in the Sky">Castle in the sky</option>
+              <option value="My Neighbor Totoro">My Neighbor Totoro</option>
+              <option value="Kiki's Delivery Service">Kiki's Delivery Service</option>
+              <option value="Grave of the Fireflies">Grave of the Fireflies</option>
+              <option value="Only Yesterday">Only Yesterday</option>
+              <option value="Porco Rosso">Porco Rosso</option>
+              <option value="Pom Poko">Pom Poko</option>
+              <option value="Whisper of the Heart">Whisper of the Heart</option>
+              <option value="Princess Mononoke">Princess Mononoke</option>
+              <option value="My Neighbors the Yamadas">My Neighbors the Yamadas</option>
+              <option value="Spirited Away">Spirited Away</option>
+              <option value="The Cat Returns">The Cat Returns</option>
+              <option value="Howl's Moving Castle">Howl's Moving Castle</option>
+              <option value="Tales from Earthsea">Tales from Earthsea</option>
+              <option value="Ponyo on the Cliff by the Sea">Ponyo on the Cliff by the Sea</option>
+              <option value="The Secret World of Arrietty">The Secret World of Arrietty</option>
+              <option value="From Up on Poppy Hill">From Up on Poppy Hill</option>
+              <option value="The Wind Rises">The Wind Rises</option>
+              <option value="The Tale of the Princess Kaguya">The Tale of the Princess Kaguya</option>
+              <option value="When Marnie Was There">When Marnie Was There</option>
+            </select>
+      </ul>
+      <div>
+        <input type="text" id="buscador" placeholder="Buscar" class="input-100">
+       
+      </div>
+  </nav>
+  <!-- main -->
+  <main class="main-container">
+
+    <!-- <p id="demo"></p> -->
+
+      <section id="pantallaUno">
+          <!-- <h1 id="encabezado">STUDIOS GHIBLI SITE <br> You Ghibli World!</h1>
+          <div class="imagenlogotipo">
+            <img src="./img/Studio_Ghibli_Logo.png">
+          </div> -->
+          
+         
+          <!-- <Menu>Menu
+          </Menu> -->
+      </section>
+      <section id="peliculas" class="grid-container">
+
+<!--      <article id="cd3d059c-09f4-4ff3-8d63-bc765a5184fa">
+            <h2>El Castillo Ambulante</h2>
+            <div class="pelicula1">
+              <img src="https://static.wikia.nocookie.net/studio-ghibli/images/0/08/Howl%27s_Moving_Castle.jpg" alt="">
+            </div>
+          </article>
+   <div class="grid-container">
+      <div
+        class="grid-item tall"
+        style="background-image: url('https://picsum.photos/id/65/900/900.jpg')">
+        
+        <div class="texto1"><h2>LA PRINCESA MONONOKE</h2></div>
+    </div>
+          
+mostrarpeliculas(data.films);
+function mostrarpeliculas(misdatos){
+  let cajadatos=document.getElementById("peliculas");
+  cajadatos.innerHTML="";
+  for (let j=0; j<misdatos.length; j++){
+   cajadatos.innerHTML+=`        <article class="miarticulo">
+            
+   <h2>${misdatos[j].title}</h2>
+            <div id='${misdatos[j].id}' class="pelicula">
+            
+            <a class="empezar" href="detalle.html"><img  src="${misdatos[j].poster}" alt=""></a>
+          </div>
+        </article>`
+  
+  }
+ 
+}
+          <article id="dc2e6bd1-8156-4886-adff-b39e6043af0c">
+            <h2>El viaje de Chihiro</h2>
+            <div class="pelicula2">
+              <img src="https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Spirited_Away.png" alt="">
+            </div>
+          </article>
+         
+          
+          <article id="45db04e4-304a-4933-9823-33f389e8d74d">
+            <h2>La colina de las amapolas</h2>
+            <div class="pelicula6">
+              <img src="https://static.wikia.nocookie.net/studio-ghibli/images/b/bb/From_Up_on_Poppy_Hill.jpg" alt="">
+            </div>
+          </article> -->
+
+        </section>
+
+        <section id="cajadatos"></section>
+      <!-- <section class="main-container__section">SECTION</section>
+      <aside class="main-container__aside">ASIDE</aside> -->
+      <section id="cajadatos"></section>
+      <section id="cajadat"></section>
+  </main>
+  <!-- fin main -->
+ 
+    <footer class="main-footer">FOOTER</footer>
+    <div id="root"></div>
+    <script src="main.js" type="module"></script>
+    <script src="main1.js" type="module"></script>
+  </body>
+</html>
