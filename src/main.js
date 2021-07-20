@@ -131,8 +131,8 @@ function mostrarpeliculas(misdatos){
   let cajadatos=document.getElementById("peliculas");
   cajadatos.innerHTML="";
   for (let j=0; j<misdatos.length; j++){
-   cajadatos.innerHTML+=`        <article class="miarticulo">
-
+  cajadatos.innerHTML+=`        <article class="miarticulo">
+ 
    <h2>${misdatos[j].title}</h2>
             <div id='${misdatos[j].id}' class="pelicula">
             
@@ -175,11 +175,62 @@ function mipelicula(miid){
   console.log("clic en pelicula")
 
 }
-   //lista de personajes (people) de la pelicula "Castle in the Sky"
+//*lista de personajes (people) de la pelicula "Castle in the Sky"
 /*function verPersonajes() {
 let personajes1=data.films[0].people[i].name; 
 for (let i=0; i<13; i++){
 document.getElementById("Personajes").innerHTML=personajes1[0].style.display="block";
 }
-console.log(data.films[0].people[i].name);*/
-console.log(data.films[6].title);
+console.log(data.films[0].people[i].name);
+console.log(data.films.map((item)=>{
+  return  `${item.people}`;
+  }}));
+  //*console.log();
+  //data.films[0].people;
+   // console.log(data.films[1].people)
+
+   //lista de personajes (people) de la pelicula "Castle in the Sky"
+// for (let i=0; i<13; i++){
+//   console.log(data.films[0].people[i].name);
+// }*/
+//console.log(data.films[6].people);
+mostrarpersonajes(data.films);
+function mostrarpersonajes(misdatos){
+  let cajadatos=document.getElementById("peliculas");
+  cajadatos.innerHTML="";
+  for (let j=0; j<misdatos.length; j++){
+  cajadatos.innerHTML+=`        <article class="miarticulo">
+ 
+   <h2>${misdatos[j].people}</h2>
+            <div id='${misdatos[j].name}' class="pelicula">
+            
+            <a class="empezar" href="detalle.html" 
+            ><img  src="${misdatos[j].img}" alt=""></a>
+          </div>
+          </article>`
+  
+  }
+  //document.getElementById(misdatos[0].id).addEventListener("click",mipelicula(misdatos[0].id),true);
+}
+//
+const selectPersonajes= document.querySelector(".selectp")
+function filtrarPersonajes(){
+  console.log (selectPersonajes.value);
+  data.films.forEach(elemento=>{
+    if(selectPersonajes.value=== elemento.title){
+      mostrarpersonajes(elemento.people);
+      
+
+    }
+   } 
+  )}
+  selectPersonajes.addEventListener("change", filtrarPersonajes)   
+ 
+  /*let prueba = data.films.forEach(film=> {
+    film.people.forEach(person=>{
+        console.log(person.name)
+        
+    })
+    }
+);
+console.log(prueba);*/
