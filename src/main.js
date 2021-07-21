@@ -206,7 +206,11 @@ function mostrarpersonajes(misdatos){
             
             <a class="empezar" href="detalle.html" 
             ><img  src="${misdatos[j].img}" alt=""></a>
-            
+            <p>Género: "${misdatos[j].gender}"</p>
+            <p>Edad: "${misdatos[j].age}"</p>
+            <p>Color de ojos: "${misdatos[j].eye_color}"</p>
+            <p>color de cabello: "${misdatos[j].hair_color}"</p>
+            <p>Especie: "${misdatos[j].specie}"</p>
           </div>
           </article>`
   
@@ -220,9 +224,7 @@ function filtrarPersonajes(){
   data.films.forEach(elemento=>{
     if(selectPersonajes.value=== elemento.title){
       mostrarpersonajes(elemento.people);
-let personajes = selectPersonajes.value;
       
-
     }
    } 
   )}
