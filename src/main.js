@@ -201,11 +201,12 @@ function mostrarpersonajes(misdatos){
   for (let j=0; j<misdatos.length; j++){
   cajadatos.innerHTML+=`        <article class="miarticulo">
  
-   <h2>${misdatos[j].people}</h2>
-            <div id='${misdatos[j].name}' class="pelicula">
+   <h2>${misdatos[j].name}</h2>
+            
             
             <a class="empezar" href="detalle.html" 
             ><img  src="${misdatos[j].img}" alt=""></a>
+            
           </div>
           </article>`
   
@@ -219,6 +220,7 @@ function filtrarPersonajes(){
   data.films.forEach(elemento=>{
     if(selectPersonajes.value=== elemento.title){
       mostrarpersonajes(elemento.people);
+let personajes = selectPersonajes.value;
       
 
     }
@@ -234,3 +236,12 @@ function filtrarPersonajes(){
     }
 );
 console.log(prueba);*/
+
+console.log(data.films.map((item)=>{
+  return  `${item.director}`;
+   }));
+    console.log();
+  data.films[0].director;
+   console.log(data.films[1].director)
+ let directores= data.films[1].director;
+ document.getElementById(".nav-container__item").addEventListener("click",mostrarpeliculas);`${directores}`
