@@ -10,8 +10,8 @@ Es una interfaz web pensada en responder a los requerimientos de los usuarios en
 Link de historias de usuario: https://docs.google.com/document/d/1L0cbhxTdZEeIBjJgAAJ1BuYgQwey1i_bFVVC3RLWcvg/edit
 
 A partir de la aplicacion de un cuestionario orientado a usuarios que conocen Studios Ghibli y la sistematización de este, logramos la definición de historias de usuario. Decidimos solucionar los problemas de los usuarios, añadiendo los requerimientos de información que desean visualizar en una pagina web de Studios Ghibli. Los usuarios amateur requieren de información en Cards o box de las películas. Los usuarios regulares requieren de un Botón que les lleve a la información de personajes y sus características. Para los usuarios expertos se creo un Modal con Información de sinopsis de las películas y un enlace en el footer para redes sociales. En funcion a las historias de usuario diseñamos los bocetos, pensando tanto en usuarios que se conectan a traves de un monitor, como de una tablet y de un celular, se realizo bocetos para la pagina vista desde una monitor y para la pagina vista desde una tablet o un celular. Las fotos de estos bocetos dibujados estan en la carpeta img, y la sub-carpeta bocetos.
-![img](./img/boceto final.png)
-![img](./img/boceto para celular.jpg)
+![img](./img/bocetofinal.png)
+![img](./img/bocetocelular.jpg)
 ![img](./img/boceto1.png)
 
 2. Plan de Acción: 
