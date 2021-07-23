@@ -1,3 +1,5 @@
+
+/*Estilizamos los nodos de html con css(implementando color y tamaño) tambien usamos flexbox y */
 :root{
     --color-header: #011826;
     --color-nav:#049DBF;
@@ -58,7 +60,7 @@ div{
     display: flex;
     justify-content:flex-end;
 }
-
+/*Para el diseño web responsive usamos media query para definir la visualizacion en monitores, tablet o celulares */
 @media screen and (min-width:768px){
     .nav-container{
         display: flex;

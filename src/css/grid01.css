@@ -1,3 +1,4 @@
+/*Usamos grid o grillas para estilizar la estructura de la pagina de acuerdo al boceto*/
 .miarticulo {
     display: flex;
     align-items: center;
@@ -38,9 +39,7 @@
   }
   
   @media (min-width: 600px) {
-    /* .wide {
-      grid-column: span 2;  grid-row
-    } */
+   
   
     .tall {
       grid-row: span 2;
@@ -51,7 +50,6 @@
     position: absolute;
     top:40px;
     text-align: center;
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
     font-size: 7px;
     color: rgb(234, 234, 243);
     font-weight: bold;
@@ -59,11 +57,7 @@
     font-family: 'Kavoon', cursive;
   }
   
-  /* @media screen and (min-width:1000px){
-    .tall {
-      grid-row: span 2;
-    }
-  } */
+
   
   @media screen and (min-width:1324px){
     .tall {

@@ -59,7 +59,7 @@ Localizamos los elementos del DOM usando los selectores, por ejemplo .getElement
   Object.values ​​(obj): devuelve una matriz de valores. Object.entries (obj): devuelve una matriz de pares [clave, valor]
 
 # Uso ES modules: 
-   Import y export. Entendimos el uso de los modules por ejemplo a partir del module de data ghibli exportado hacia el main.js donde podemos importar la información para su manipulaicon con el DOm y las funciones. 
+   Import y export. Entendimos el uso de los modules por ejemplo a partir del module de data ghibli exportado hacia el main.js donde podemos importar la información para su manipulación con el DOm y las funciones. 
 
 # Diferencia entre expresión y sentencia
    Una declaración o sentencia es una instrucción que define una acción. En JavaScript existen dos formas de crear una función: declarando la función, o mediante una expresión.Ambas funciones pueden ser invocadas llamándose por el nombre de la función, en el caso de la función-sentencia, o de la variable en el caso de la función-expresión. No obstante la declaración en sí misma no retorna ningún valor.
