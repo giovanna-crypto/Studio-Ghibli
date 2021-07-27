@@ -1,6 +1,8 @@
 {
   "env": {
-    "browser": true
+    "browser": true,
+    //ecmascript6 ese nombre verdadero
+    "es6":true
   },
   "parserOptions": {
     "ecmaVersion": 2018,
@@ -9,6 +11,8 @@
   "extends": "eslint:recommended",
   "rules": {
     "no-console": "warn",
-    "import/extensions": 0
+    "import/extensions": 0,
+    //para reconoce set ..  funciona set
+    "no-unused-vars": "off"
   }
 }
