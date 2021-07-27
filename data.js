@@ -1,5 +1,4 @@
-// estas funciones son de ejemplo
-
+//función pura para ordenar
 export const ordenar = (a,b)=>{
   const titleA= a.title.toLowerCase();//castillo
   const titleB= b.title.toLowerCase();//album
@@ -10,8 +9,4 @@ export const ordenar = (a,b)=>{
       return 1;
   }
   return 0;
-};
-
-export const anotherExample = () => {
-  return 'OMG';
 };

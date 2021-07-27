@@ -32,4 +32,4 @@ function muestraSlides(n){
     slides[indice-1].style.display = 'block';
     barras[indice-1].className += ' active';
 
-}
+} 

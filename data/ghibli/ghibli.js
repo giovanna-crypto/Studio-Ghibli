@@ -84,7 +84,7 @@ export default {
         {
           "id": "fcb4a2ac-5e41-4d54-9bba-33068db083ca",
           "name": "Louis",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/80/Louis.jpg",
+          "img": "https://i.pinimg.com/236x/2c/ab/ae/2cabae605962ecd4d8855e6ca806dcfe.jpg",
           "gender": "Male",
           "age": "30",
           "eye_color": "Dark brown",
@@ -564,7 +564,7 @@ export default {
         {
           "id": "3f78eba1-f9b0-489b-8686-f4508cdf049d",
           "name": "Toshio",
-          "img": "http://static.wikia.nocookie.net/studio-ghibli/images/2/23/Toshio.png",
+          "img": "https://cdn-us.animeshon.com/i/Gc/6s/9snLNhAq/rIZN37DEnZWh.png",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Black",
@@ -615,7 +615,7 @@ export default {
           "id": "c8f02850-0c1f-499c-8b5e-d8ad16f3ecc4",
           "name": "Yaeko Okajima",
           "gender": "Female",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/0/03/Yaeko.png",
+          "img": "https://www.onlineghibli.com/only_yesterday/newimages/Yaeko.jpg",
           "age": "16",
           "eye_color": "Black",
           "hair_color": "Grey",
@@ -624,7 +624,7 @@ export default {
         {
           "id": "6e960787-5a47-4178-a040-1ef5bf5e4a6c",
           "name": "Tani Tsuneko",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/5/5a/Tani.jpg",
+          "img": "https://www.onlineghibli.com/only_yesterday/newimages/TaniTsuneko.jpg",
           "gender": "Female",
           "age": "10",
           "eye_color": "Black",
@@ -700,7 +700,7 @@ export default {
         {
           "id": "eff43a47-e59c-41bd-bcc6-b1827d63bed5",
           "name": "Donald Curtis",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/3/3c/Curtis.jpg",
+          "img": "https://www.animeclick.it/immagini/personaggio/Donald_Curtis/cover/3513-Donald_Curtis-foto.jpg",
           "gender": "Male",
           "age": "Adult",
           "eye_color": "Brown",
@@ -739,16 +739,6 @@ export default {
         },
         {
           "id": "a63c25f4-41a4-4f78-933f-3c14e2903a8f",
-          "name": "Capo",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/9/98/Aiuto_Gang_boss.jpg",
-          "gender": "Male",
-          "age": "Adult",
-          "eye_color": "Black",
-          "hair_color": "Bald",
-          "specie": "Human"
-        },
-        {
-          "id": "1f24edca-65cf-4268-afe8-61e2c2afa5af",
           "name": "Capo",
           "img": "https://static.wikia.nocookie.net/studio-ghibli/images/9/98/Aiuto_Gang_boss.jpg",
           "gender": "Male",
@@ -895,7 +885,7 @@ export default {
         {
           "id": "42a69bf6-b5e8-42b1-b05a-12c3d05e7c1e",
           "name": "Shizuku Tsukishima",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/Shizuku_Tsukishima.gif",
+          "img": "http://pm1.narvii.com/7118/1812163b4e573abae4dfed3184fa82e219d593fer1-225-350v2_00.jpg",
           "gender": "Female",
           "age": "14",
           "eye_color": "Black",
